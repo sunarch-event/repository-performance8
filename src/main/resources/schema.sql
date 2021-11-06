@@ -7,6 +7,8 @@ create table if not exists user_info (
     ,blood_type varchar(2) not null
 );
 
+create index prefectures_index on user_info(prefectures);
+
 create table if not exists user_hobby (
      id integer
     ,hobby1 varchar(256)
